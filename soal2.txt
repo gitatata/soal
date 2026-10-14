@@ -1,0 +1,29 @@
+Algoritma PolaSegiempat(N):
+    JIKA N <= 2 MAKA
+        CETAK "square = Nilai terlalu kecil"
+        BERHENTI
+    AKHIR JIKA
+
+    JIKA N >= 10 MAKA
+        CETAK "square = Nilai terlalu besar"
+        BERHENTI
+    AKHIR JIKA
+
+    CETAK "N = " + N
+    CETAK "square ="
+
+    batas_atas_bawah = "=" diulang N kali
+    CETAK batas_atas_bawah
+
+    isi_tengah = ""
+    UNTUK i = 1 SAMPAI (N - 2) LAKUKAN
+        baris = "|" + (spasi diulang N-2 kali) + "|"
+        CETAK baris
+        isi_tengah = isi_tengah + baris
+    AKHIR UNTUK
+
+    CETAK batas_atas_bawah
+
+    baris_gabungan = batas_atas_bawah + isi_tengah + batas_atas_bawah
+    CETAK baris_gabungan
+AKHIR ALGORITMA
